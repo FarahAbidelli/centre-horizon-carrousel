@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sliders</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header>
+    <h1>Sliders</h1>
+  </header>
+
+  <main>
+    <a href="#" id="toolbar-toggle" class="toolbar-toggle">Afficher/Cacher</a>
+
+    <div id="toolbar" class="toolbar hidden">
+      <button id="slider-previous" type="button" title="Précédent" aria-label="Photo précédente">
+        <i class="fa-solid fa-backward"></i>
+      </button>
+      <button id="slider-toggle" type="button" title="Démarrer / Arrêter" aria-label="Démarrer ou arrêter le carrousel">
+        <i class="fa-solid fa-play"></i>
+      </button>
+      <button id="slider-next" type="button" title="Suivant" aria-label="Photo suivante">
+        <i class="fa-solid fa-forward"></i>
+      </button>
+      <button id="slider-random" type="button" title="Aléatoire" aria-label="Photo aléatoire">
+        <i class="fa-solid fa-shuffle"></i>
+      </button>
+    </div>
+
+    <figure id="slider" class="slider">
+      <img id="slider-image" src="images/photo1.webp" alt="">
+      <figcaption id="slider-title"></figcaption>
+    </figure>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
